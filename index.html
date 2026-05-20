@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolás de Paula — Full Stack Developer</title>
+  <meta name="description" content="Desarrollo webs a medida para PyMEs y startups en Argentina. Full Stack con React, Node.js y PostgreSQL." />
+  <meta property="og:title" content="Nicolás de Paula — Full Stack Developer" />
+  <meta property="og:description" content="Desarrollo webs a medida para negocios que quieren crecer." />
+  <meta property="og:image" content="assets/foto.png" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SKIP LINK -->
+  <a href="#main" class="skip-link">Ir al contenido principal</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="NicoDev — inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="nd-g" x1="0" y1="0" x2="150" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0090D0"/>
+              <stop offset="1" stop-color="#E8006D"/>
+            </linearGradient>
+          </defs>
+          <rect x="0.5" y="1.5" width="32" height="32" rx="6" fill="url(#nd-g)" fill-opacity="0.09"/>
+          <rect x="0.5" y="1.5" width="32" height="32" rx="6" stroke="url(#nd-g)" stroke-width="1.2"/>
+          <path d="M12 10L7.5 17.5L12 25" stroke="url(#nd-g)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15 25L19 10" stroke="url(#nd-g)" stroke-width="1.75" stroke-linecap="round"/>
+          <path d="M21.5 10L26 17.5L21.5 25" stroke="url(#nd-g)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="42" y="26" font-family="'Barlow Semi Condensed', sans-serif" font-weight="800" font-size="22" letter-spacing="0.5" fill="#f0f4ff">NICO<tspan fill="#E8006D">DEV</tspan></text>
+        </svg>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__links" id="navLinks" role="list">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#encuesta">Tu proyecto</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="navbar__cta">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge reveal" aria-label="Estado: disponible para proyectos">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Disponible para proyectos
+          </div>
+          <p class="hero__kicker reveal" aria-label="Rol profesional">Full Stack Developer</p>
+          <h1 class="hero__title reveal" id="hero-title">
+            Hola,<br>soy <span class="hero__name">Nico</span>
+          </h1>
+          <p class="hero__tagline reveal">
+            Desarrollo webs a medida para negocios que quieren organizar sus datos, impulsar sus ventas o mostrar sus servicios.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn--ghost">Contactame</a>
+          </div>
+          <div class="hero__stack reveal" aria-label="Tecnologías principales">
+            <span>React</span>
+            <span aria-hidden="true">·</span>
+            <span>Node.js</span>
+            <span aria-hidden="true">·</span>
+            <span>PostgreSQL</span>
+            <span aria-hidden="true">·</span>
+            <span>Supabase</span>
+          </div>
+        </div>
+        <div class="hero__photo-wrap reveal" aria-hidden="true">
+          <div class="hero__photo-frame">
+            <img src="assets/foto.png" alt="Nicolás de Paula, Full Stack Developer" class="hero__photo" width="320" height="400" />
+          </div>
+          <div class="hero__photo-accent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section sobre-mi" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container">
+        <div class="sobre-mi__inner">
+          <div class="sobre-mi__left reveal">
+            <h2 class="section__title" id="sobre-mi-title">Quién soy<br>y cómo trabajo</h2>
+          </div>
+          <div class="sobre-mi__right reveal">
+            <p>Soy Nico, desarrollador Full Stack con 3 años de experiencia creando soluciones web a medida para PyMEs y startups.</p>
+            <p>Me enfoco en entender el negocio antes de escribir una línea de código. Trabajo con React, Node.js, PostgreSQL y Supabase: tecnologías modernas, confiables y escalables.</p>
+            <p>Si tu negocio necesita una web que realmente funcione para vos, podemos hablar.</p>
+            <div class="sobre-mi__techs" aria-label="Stack tecnológico">
+              <span class="tech-item">React / Next.js</span>
+              <span class="tech-item">Node.js / Express</span>
+              <span class="tech-item">PostgreSQL</span>
+              <span class="tech-item">Supabase</span>
+              <span class="tech-item">HTML / CSS / JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO / ROADMAP -->
+    <section class="section section--alt proceso" id="proceso" aria-labelledby="proceso-title">
+      <div class="container">
+        <div class="proceso__header">
+          <h2 class="section__title section__title--center reveal" id="proceso-title">Cómo trabajo</h2>
+          <p class="proceso__intro reveal">Un proceso claro, iterativo y sin sorpresas de principio a fin.</p>
+        </div>
+        <ol class="roadmap" role="list" aria-label="Etapas del proceso de trabajo">
+          <li class="roadmap__step reveal">
+            <div class="roadmap__dot" aria-hidden="true"><span>01</span></div>
+            <div class="roadmap__text">
+              <h3 class="roadmap__step-title">Consulta inicial</h3>
+              <p class="roadmap__step-desc">Entiendo tu negocio, tus objetivos y el problema real a resolver.</p>
+            </div>
+          </li>
+          <li class="roadmap__step reveal">
+            <div class="roadmap__dot" aria-hidden="true"><span>02</span></div>
+            <div class="roadmap__text">
+              <h3 class="roadmap__step-title">Propuesta</h3>
+              <p class="roadmap__step-desc">Diseño una solución a medida con presupuesto y tiempos claros.</p>
+            </div>
+          </li>
+          <li class="roadmap__step reveal">
+            <div class="roadmap__dot" aria-hidden="true"><span>03</span></div>
+            <div class="roadmap__text">
+              <h3 class="roadmap__step-title">Diseño</h3>
+              <p class="roadmap__step-desc">Prototipos visuales para validar antes de escribir código.</p>
+            </div>
+          </li>
+          <li class="roadmap__step reveal">
+            <div class="roadmap__dot" aria-hidden="true"><span>04</span></div>
+            <div class="roadmap__text">
+              <h3 class="roadmap__step-title">Desarrollo</h3>
+              <p class="roadmap__step-desc">Código limpio y escalable. Actualizaciones frecuentes.</p>
+            </div>
+          </li>
+          <li class="roadmap__step reveal">
+            <div class="roadmap__dot" aria-hidden="true"><span>05</span></div>
+            <div class="roadmap__text">
+              <h3 class="roadmap__step-title">Lanzamiento</h3>
+              <p class="roadmap__step-desc">Deploy, pruebas finales y entrega del proyecto funcionando.</p>
+            </div>
+          </li>
+          <li class="roadmap__step reveal">
+            <div class="roadmap__dot" aria-hidden="true"><span>06</span></div>
+            <div class="roadmap__text">
+              <h3 class="roadmap__step-title">Soporte</h3>
+              <p class="roadmap__step-desc">Acompañamiento post-lanzamiento para ajustes y mejoras.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ENCUESTA / TU PROYECTO -->
+    <section class="section encuesta-section" id="encuesta" aria-labelledby="encuesta-title">
+      <div class="container">
+        <div class="encuesta-section__header">
+          <h2 class="section__title section__title--center reveal" id="encuesta-title">¿Tenés un proyecto?</h2>
+          <p class="encuesta-section__subtitle reveal">Contame tu idea en 2 minutos. Te armo un mensaje para WhatsApp con todo listo.</p>
+        </div>
+        <div class="enc-card reveal" role="region" aria-label="Encuesta de contacto">
+          <div class="enc-progress-wrap" id="encProgressWrap">
+            <div class="enc-progress-bar" id="encBar" role="progressbar" aria-label="Progreso" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1"></div>
+          </div>
+          <p class="enc-step-label" id="encLabel" aria-live="polite">Paso 1 de 6</p>
+          <form id="encForm" class="enc-form" novalidate></form>
+          <div class="enc-nav" id="encNav">
+            <button type="button" class="btn btn--ghost enc-btn-back" id="encBack" disabled aria-label="Volver al paso anterior">← Atrás</button>
+            <button type="button" class="btn btn--primary enc-btn-next" id="encNext">Siguiente →</button>
+          </div>
+          <div class="enc-success" id="encSuccess" hidden aria-live="assertive">
+            <div class="enc-success__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 class="enc-success__title">¡Listo!</h3>
+            <p class="enc-success__desc">Tu mensaje fue preparado. WhatsApp se va a abrir con toda la información. Te respondo en menos de 24 hs.</p>
+            <button type="button" class="btn btn--ghost" id="encReset">Empezar de nuevo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section proyectos" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="proyectos-title">Trabajos recientes</h2>
+        <article class="proyecto-feature reveal" aria-label="Proyecto: Dra. Natalia Funk">
+          <div class="proyecto-feature__preview">
+            <img
+              src="assets/proyecto-dra-natalia.png"
+              alt="Sitio web de la Dra. Natalia Funk — especialista médica"
+              class="proyecto-feature__img"
+              width="800"
+              height="500"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('no-img')"
+            />
+          </div>
+          <div class="proyecto-feature__meta">
+            <p class="proyecto-feature__client">Cliente</p>
+            <h3 class="proyecto-feature__title">Dra. Natalia Funk</h3>
+            <p class="proyecto-feature__desc">Sitio web profesional para médica especialista. Presenta sus especialidades, centraliza la información para sus pacientes y gestiona consultas frecuentes.</p>
+            <div class="proyecto-feature__tags" aria-label="Tecnologías usadas">
+              <span>React</span>
+              <span>Supabase</span>
+              <span>Node.js</span>
+            </div>
+            <a href="https://dranatifunk.nicodpdev.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary proyecto-feature__cta">
+              Ver proyecto
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section--alt contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contacto__inner">
+        <div class="contacto__text reveal">
+          <h2 class="section__title" id="contacto-title">¿Tenés un proyecto<br>en mente?</h2>
+          <p>Contame tu idea. Te respondo en menos de 24 horas, sin compromiso.</p>
+        </div>
+        <div class="contacto__actions reveal">
+          <a href="https://wa.me/543525502606" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+          <a href="mailto:depaulanicolas22222@gmail.com" class="btn btn--primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/>
+            </svg>
+            Enviar email
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="#hero" class="footer__logo" aria-label="NicoDev — volver al inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="118" height="27" viewBox="0 0 118 27" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="nd-fg" x1="0" y1="0" x2="118" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0090D0"/>
+              <stop offset="1" stop-color="#E8006D"/>
+            </linearGradient>
+          </defs>
+          <rect x="0.5" y="0.5" width="24" height="24" rx="5" fill="url(#nd-fg)" fill-opacity="0.09"/>
+          <rect x="0.5" y="0.5" width="24" height="24" rx="5" stroke="url(#nd-fg)" stroke-width="1"/>
+          <path d="M9 7L5.5 12.5L9 18" stroke="url(#nd-fg)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11.5 18L14.5 7" stroke="url(#nd-fg)" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 7L19.5 12.5L16 18" stroke="url(#nd-fg)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="31" y="19.5" font-family="'Barlow Semi Condensed', sans-serif" font-weight="800" font-size="17" letter-spacing="0.4" fill="#f0f4ff">NICO<tspan fill="#E8006D">DEV</tspan></text>
+        </svg>
+      </a>
+      <nav class="footer__nav" aria-label="Links de contacto">
+        <a href="https://github.com/nesqu1k22" target="_blank" rel="noopener noreferrer" class="footer__icon" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/543525502606" target="_blank" rel="noopener noreferrer" class="footer__icon" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+        <a href="mailto:depaulanicolas22222@gmail.com" class="footer__icon" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2025 Nicolás de Paula</span>
+        <span>Hecho en Argentina</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
